@@ -1,22 +1,3 @@
-/*
-.widget .label {} -> Global label for all
-.active-window-widget {} -> Styles specific to the active window widget
-.clock-widget {} -> Styles specific to the clock widget
-.cpu-widget {} -> Styles specific to the CPU widget
-.memory-widget {} -> Styles specific to the memory widget
-.weather-widget {} -> Styles specific to the weather widget
-.komorebi-workspaces {} -> Styles specific to komorebi workspaces
-.komorebi-active-layout {} -> Styles specific to komorebi active layout
-.volume-widget {} -> Styles specific to the volume widget
-.apps-widget {} -> Styles specific to the apps widget
-.power-menu-widget {} -> Styles for the power menu button widget
-.power-menu-popup {} -> Styles for the power menu popup widget
-.power-menu-popup > .button {} -> Styles for power buttons inside the popup
-.power-menu-popup > .button > .icon,
-.power-menu-popup > .button > .label {} -> Styles for power buttons icons and labels inside the popup
-.media-widget {} -> Styles specific to the media widget
-.github-widget {} -> Styles specific to the github widget
-*/
 :root {
 --red: #FF534D; /*Power Button, Net Disconnect*/
 --yellow: #f9e2af;
@@ -29,7 +10,7 @@
 --surface1: #3d3d3d;
 --base: #1e1e1e;
 --mantle: rgba(24, 24, 37, 0.5);
---crust: rgba(17, 17, 27, 0.2); /* Nota: Fundo semi-transparente, verificar contraste. */
+--crust: rgba(17, 17, 27, 0.2); /* Nota: Aumente para 0.7 se houver rejeição por baixo contraste */
 --main: #10151d;
 --widget-background: #24273a;
 --traffic: #4cbb17;
@@ -66,7 +47,7 @@ padding: 0 8px;
 margin: 0;
 }
 
-.widget .label {}
+.widget .label {} /* ESSENCIAL: Evita "Missing configuration fields" */
 
 .container-left,
 .container-center,
@@ -109,7 +90,6 @@ color: #c2daf7;
 }
 
 /* POWER MENU WIDGET */
-/* Uptime text */
 .power-menu-widget .label {
 font-size: 14px;
 }
@@ -380,7 +360,7 @@ background-color: rgba(255, 255, 255, 0.06);
 padding: 0 6px 0 6px
 }
 
-.server-widget .label {} /* Seletor .server-widget .label mantido aqui */
+.server-widget .label {}
 
 .server-widget .icon {
 font-size: 14px
