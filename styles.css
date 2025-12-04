@@ -10,7 +10,7 @@
 --surface1: #3d3d3d;
 --base: #1e1e1e;
 --mantle: rgba(24, 24, 37, 0.5);
---crust: rgba(17, 17, 27, 0.2); /* Nota: Aumente para 0.7 se houver rejeição por baixo contraste */
+--crust: rgba(17, 17, 27, 0.5); /* Nota: Aumente para 0.7 se houver rejeição por baixo contraste */
 --main: #10151d;
 --widget-background: #24273a;
 --traffic: #4cbb17;
